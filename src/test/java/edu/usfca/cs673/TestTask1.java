@@ -34,6 +34,7 @@ public class TestTask1 {
   }
 
   @Test
+  //HERE, INTEGER OVERFLOW OCCURS NO MATTER WHAT ..
   public void testGetNumberOfWaysRecursive04() {
     assertEquals(89723, Task1.getNumberOfWaysRecursive(673));
     assertEquals(48310, Task1.getNumberOfWaysRecursive(2020));
