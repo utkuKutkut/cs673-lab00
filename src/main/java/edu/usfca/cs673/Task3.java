@@ -7,17 +7,17 @@ public class Task3 {
   final static int MOD = 99991;
 
   public static int getNumberOfTeamFormations(int n) {
-    int twoN=2*n;
-    int top=1;
-    int bottom=1;
-    int temp=n;
+    long twoN=2*n;
+    double top=1;
+    double bottom=1;
+    long temp=n;
     for(int i=0;i<temp;i++){
       top*=twoN;
       bottom*=n;
       n-=1;
       twoN-=1;
     }
-    int divide=top/bottom;
-    return (divide/2)%MOD;
+    double divide=top/bottom;
+    return (int) ((divide/2)%MOD);
   }
 }
